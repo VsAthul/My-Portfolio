@@ -22,17 +22,19 @@
                 </div>  
                 <div style="clear:both;"></div>  
             </div>  
+            
+            <!-- Hamburger menu for mobile -->
+            <button class="hamburger-btn">☰</button>
+            
             <div class="topdiv">
                 <a class="topmenu" href="#about-me">About Me</a>
                 <a class="topmenu" href="#skills">Skills</a>
                 <a class="topmenu" href="#projects">Projects</a>
                 <a class="topmenu" href="#academics">Academics</a>
                 <a class="topmenu" href="#certifications">Certifications</a>
-                <a class="topmenu" href="Athulvs_Resume.pdf"  download>Download Resume</a>
+                <a class="topmenu" href="Athulvs_Resume.pdf" download>Download Resume</a>
             </div>
-            
-            </div>
-            
+        </div>
     </nav>
 
     <section id="about-me" class="container">
@@ -40,19 +42,18 @@
             <img src="images/portfolio_profile.png" class="profile_image" alt="Athul V S Profile">
         </div> 
         <div>
-
             <h1>
                 Hi, I'm Athul V S! <img src="images/waving-hand.gif" width="80px" alt="Waving hand"/>
             </h1>
             <p>
                 Master of Computer Applications candidate specializing in AI, Machine Learning, and Backend Development. Proficient 
-                in Python, Django, Scikit-learn, SQL and TensorFlow. Proven ability  to develop innovative, real-world solutions by 
+                in Python, Django, Scikit-learn, SQL and TensorFlow. Proven ability to develop innovative, real-world solutions by 
                 transforming complex data into actionable insights. Seeking a challenging role to apply expertise in Data Science, 
                 Backend Development, and Software Engineering.    
             </p>   
-<div class="connect-me-icon">
-            <a href="#connectme"><img src="images/connect-me.png"  alt="connect me icon"></a>
-        </div>
+            <div class="connect-me-icon">
+                <a href="#connectme"><img src="images/connect-me.png" alt="connect me icon"></a>
+            </div>
         </div>
     </section>
 
@@ -192,7 +193,6 @@
                 <p class="cert-date">Issued: 2025</p>
                 <p class="cert-issuer">INFOSYS SPRINGBOARD</p>
             </div>
-            
         </div>
     </section>
 
@@ -206,6 +206,19 @@
         </div>
     </div>
 
+    <h2>Connect with Me</h2>
+    <div id="connectme">
+        <div class="contact_icon">
+            <a href="https://www.linkedin.com/in/athul-v-s-04a190277?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B55k%2FpZB4Tq6v%2F2eeAgwIVg%3D%3D"><img src="images/linkedin.png" alt="Linkedin icon"/></a>
+        </div>
+        <div class="contact_icon">
+            <a href="https://github.com/VsAthul"><img src="images/github.png" alt="Github icon"/></a>
+        </div>
+        <div class="contact_icon">
+            <a href="https://www.instagram.com/athulvs2327?igsh=MWNoaHNsMHM3eWY1Mw=="><img src="images/instagram.png" alt="Instagram icon"/></a>
+        </div>
+    </div>
+
     <div class="iconbutton">
         <a href="#home">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
@@ -213,6 +226,15 @@
             </svg>
         </a>
     </div>
+
+    <footer>
+        <style>
+            footer p{
+                color:gray;
+            }
+        </style>
+        <p>All rights reserved by Athul V S</p>
+    </footer>
 
     <script>
         // Certificate Modal Functionality
@@ -266,34 +288,15 @@
                     document.body.style.overflow = 'auto';
                 }
             });
+            
+            // Mobile menu toggle
+            const hamburgerBtn = document.querySelector('.hamburger-btn');
+            const topdiv = document.querySelector('.topdiv');
+            
+            hamburgerBtn.addEventListener('click', function() {
+                topdiv.classList.toggle('show');
+            });
         });
     </script>
-
-        <h2>Connect with Me</h2>
-    <div id="connectme">
-        <div class="contact_icon">
-                    <a href="https://www.linkedin.com/in/athul-v-s-04a190277?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B55k%2FpZB4Tq6v%2F2eeAgwIVg%3D%3D"><img src="images/linkedin.png" alt="Linkedin icon"/></a>
-                    
-                </div>
-        <div class="contact_icon" >
-                    <a href="https://github.com/VsAthul"><img src="images/github.png"  alt="Github icon"/></a>
-                    
-                </div>
-        
-
-                <div class="contact_icon">
-                    <a href="https://www.instagram.com/athulvs2327?igsh=MWNoaHNsMHM3eWY1Mw=="><img src="images/instagram.png" alt="Instagram icon"/></a>
-                   
-                </div>
-            </div>
-<footer>
-    <style>
-        footer p{
-            color:gray;
-        }
-        </style>
-    <p>All rights reserved by Athul V S</p>
-    </footer>
 </body>
-
 </html>
